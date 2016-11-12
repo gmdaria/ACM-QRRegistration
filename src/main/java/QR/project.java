@@ -1,4 +1,4 @@
-package QR;
+package project;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -26,7 +26,7 @@ import com.google.zxing.Result;
 import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
 import com.google.zxing.common.HybridBinarizer;
 
-public class ACMQR extends JFrame implements Runnable, ThreadFactory {
+public class java2 extends JFrame implements Runnable, ThreadFactory {
     private static final long serialVersionUID = 6441489157408381878L;
     private Executor executor = Executors.newSingleThreadExecutor(this);
     private Webcam webcam = null;
@@ -127,7 +127,7 @@ public class ACMQR extends JFrame implements Runnable, ThreadFactory {
     }
     
     public static void main(String[] args) {
-        ACMQR acm = new ACMQR();
+        java2 acm = new java2();
         acm.init();
         acm.run();
     }
